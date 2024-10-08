@@ -63,7 +63,7 @@ export const CreateTaxiForm = forwardRef(({createTaxi}, ref) => {
                         <input
                             className="border border-black rounded-lg p-3"
                             placeholder="Documento de Identidad"
-                            type="text"
+                            type="number"
                             name="identityDocument"
                             value={formData.identityDocument}
                             onChange={handleChange}
@@ -81,7 +81,7 @@ export const CreateTaxiForm = forwardRef(({createTaxi}, ref) => {
                         <input
                             className="border border-black rounded-lg p-3"
                             placeholder="Número de Teléfono"
-                            type="text"
+                            type="number"
                             name="phone"
                             value={formData.phone}
                             onChange={handleChange}
@@ -90,7 +90,7 @@ export const CreateTaxiForm = forwardRef(({createTaxi}, ref) => {
                         <input
                             className="border border-black rounded-lg p-3"
                             placeholder="Goal..."
-                            type="text"
+                            type="number"
                             name="goal"
                             value={formData.goal}
                             onChange={handleChange}
@@ -99,7 +99,7 @@ export const CreateTaxiForm = forwardRef(({createTaxi}, ref) => {
                         <input
                             className="border border-black rounded-lg p-3"
                             placeholder="Kilogramos..."
-                            type="text"
+                            type="number"
                             name="kilogramos"
                             value={formData.kilogramos}
                             onChange={handleChange}
@@ -108,7 +108,7 @@ export const CreateTaxiForm = forwardRef(({createTaxi}, ref) => {
                         <input
                             className="border border-black rounded-lg p-3"
                             placeholder="Unidades..."
-                            type="text"
+                            type="number"
                             name="unidades"
                             value={formData.unidades}
                             onChange={handleChange}
@@ -117,7 +117,7 @@ export const CreateTaxiForm = forwardRef(({createTaxi}, ref) => {
                         <input
                             className="border border-black rounded-lg p-3"
                             placeholder="Comisión"
-                            type="text"
+                            type="number"
                             name="comision"
                             value={formData.comision}
                             onChange={handleChange}
@@ -126,7 +126,7 @@ export const CreateTaxiForm = forwardRef(({createTaxi}, ref) => {
                         <input
                             className="border border-black rounded-lg p-3"
                             placeholder="Edad..."
-                            type="text"
+                            type="number"
                             name="age"
                             value={formData.age}
                             onChange={handleChange}

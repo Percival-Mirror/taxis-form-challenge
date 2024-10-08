@@ -5,7 +5,7 @@ export const EditTaxiForm = forwardRef(({taxiData, editTaxi}, ref) => {
     const [isOpen, setIsOpen] = useState(false);
 
     // Permite al componente padre controlar la visibilidad del modal
-    
+
     useImperativeHandle(ref, () => ({
         openModal: () => setIsOpen(true),
         closeModal: () => setIsOpen(false),
@@ -62,7 +62,7 @@ export const EditTaxiForm = forwardRef(({taxiData, editTaxi}, ref) => {
                         <input
                             className="border border-black rounded-lg p-3"
                             placeholder="Documento de Identidad"
-                            type="text"
+                            type="number"
                             name="identityDocument"
                             value={formData.identityDocument}
                             onChange={handleChange}
@@ -80,7 +80,7 @@ export const EditTaxiForm = forwardRef(({taxiData, editTaxi}, ref) => {
                         <input
                             className="border border-black rounded-lg p-3"
                             placeholder="Número de Teléfono"
-                            type="text"
+                            type="number"
                             name="phone"
                             value={formData.phone}
                             onChange={handleChange}
@@ -89,7 +89,7 @@ export const EditTaxiForm = forwardRef(({taxiData, editTaxi}, ref) => {
                         <input
                             className="border border-black rounded-lg p-3"
                             placeholder="Goal..."
-                            type="text"
+                            type="number"
                             name="goal"
                             value={formData.goal}
                             onChange={handleChange}
@@ -98,7 +98,7 @@ export const EditTaxiForm = forwardRef(({taxiData, editTaxi}, ref) => {
                         <input
                             className="border border-black rounded-lg p-3"
                             placeholder="Kilogramos..."
-                            type="text"
+                            type="number"
                             name="kilogramos"
                             value={formData.kilogramos}
                             onChange={handleChange}
@@ -107,7 +107,7 @@ export const EditTaxiForm = forwardRef(({taxiData, editTaxi}, ref) => {
                         <input
                             className="border border-black rounded-lg p-3"
                             placeholder="Unidades..."
-                            type="text"
+                            type="number"
                             name="unidades"
                             value={formData.unidades}
                             onChange={handleChange}
@@ -116,7 +116,7 @@ export const EditTaxiForm = forwardRef(({taxiData, editTaxi}, ref) => {
                         <input
                             className="border border-black rounded-lg p-3"
                             placeholder="Comisión"
-                            type="text"
+                            type="number"
                             name="comision"
                             value={formData.comision}
                             onChange={handleChange}
@@ -125,11 +125,10 @@ export const EditTaxiForm = forwardRef(({taxiData, editTaxi}, ref) => {
                         <input
                             className="border border-black rounded-lg p-3"
                             placeholder="Edad..."
-                            type="text"
+                            type="number"
                             name="age"
                             value={formData.age}
                             onChange={handleChange}
-                            required
                         />
                         <input
                             className="border border-black rounded-lg p-3"
@@ -138,7 +137,6 @@ export const EditTaxiForm = forwardRef(({taxiData, editTaxi}, ref) => {
                             name="Description"
                             value={formData.Description}
                             onChange={handleChange}
-                            required
                         />
                         <input
                             className="border border-black rounded-lg p-3"
@@ -147,11 +145,10 @@ export const EditTaxiForm = forwardRef(({taxiData, editTaxi}, ref) => {
                             name="avatar"
                             value={formData.avatar}
                             onChange={handleChange}
-                            required
                         />
 
                         <div className=' flex gap-5'>
-                            <button type='submit' className=' p-3 bg-blue-700 text-white rounded-xl'>Crear</button>
+                            <button type='submit' className=' p-3 bg-blue-700 text-white rounded-xl'>Actualizar</button>
                             <button onClick={() => setIsOpen(false)} type='button' className=' p-3 bg-gray-400 text-white rounded-xl'>Cerrar</button>
                         </div>
 

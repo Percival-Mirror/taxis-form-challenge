@@ -116,6 +116,11 @@ export const TaxisPage = () => {
         setTaxisArray((prevArray) => prevArray.filter((taxi) => taxi.id !== taxiId));
     }
 
+    useEffect(() => {
+      console.log(taxisArray)
+    }, [taxisArray])
+    
+
     const modalRef = useRef();
 
     return (
