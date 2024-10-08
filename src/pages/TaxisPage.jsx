@@ -149,6 +149,7 @@ export const TaxisPage = () => {
                                 id={taxi.id}
                                 img={taxi.avatar}
                                 name={taxi.name}
+                                number={taxi.phone}
                                 goal={taxi.Goal.goal}
                                 data={taxi}
                                 eliminateTaxi={eliminateTaxi}
